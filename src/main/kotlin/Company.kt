@@ -3,9 +3,11 @@
 class Company {
     //Default is A Million Dollars
     var assets = Assets(Equity(1.0), Liabilities(2.0, 3.0))
+    var netIncome = 1.0
 
     //Default is A Dollar
     var stock = Stock(1.0, 10000.0)
+
 
     fun isCapitalErosion() : Boolean{
         return assets.equity.getTotal() < assets.liabilities.getTotal()
