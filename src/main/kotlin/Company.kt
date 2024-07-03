@@ -5,6 +5,6 @@ class Company {
     var assets = Assets(Equity(1.0), Liabilities(2.0, 3.0))
 
     fun isCapitalErosion() : Boolean{
-        return assets.getTotal() < assets.liabilities.getTotal()
+        return assets.equity.getTotal() < assets.liabilities.getTotal()
     }
 }
