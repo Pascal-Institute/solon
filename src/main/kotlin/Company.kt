@@ -5,7 +5,7 @@ class Company {
     var assets = Assets(Equity(1.0), Liabilities(2.0, 3.0))
 
     //Default is A Dollar
-    var stockPrice = 1.0
+    var stock = Stock(1.0, 10000.0)
 
     fun isCapitalErosion() : Boolean{
         return assets.equity.getTotal() < assets.liabilities.getTotal()
